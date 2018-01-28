@@ -1,5 +1,6 @@
 # AS-Assignments
 Task 1.1
+
 Module Module1
 
     Sub Main()
@@ -28,9 +29,11 @@ Module Module1
 
        
     End Sub
-
+    
 End Module
+
 Task 1.2
+
 Module Module1
 
     Sub Main()
@@ -57,7 +60,9 @@ Module Module1
     End Sub
 
 End Module
+
 Task 1.3
+
 Module Module1
 
     Sub Main()
@@ -95,7 +100,9 @@ Module Module1
     End Sub
 
 End Module
+
 Task 1.4
+
 Module Module1
 
     Sub Main()
@@ -123,7 +130,9 @@ Module Module1
     End Sub
 
 End Module
+
 Task 1.5
+
 Module Module1
 
     Sub Main()
