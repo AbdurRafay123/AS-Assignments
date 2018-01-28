@@ -23,6 +23,12 @@ Module Module1
             WriteLine(1, MemberID)
             Console.Write("Do you want to enter more records (Y/N)?:")
             MoreRec = Console.ReadLine
+            
+            While MoreRec <> "Y" And MoreRec <> "N"
+                Console.WriteLine("Please enter Y or N") 
+                MoreRec = Console.ReadLine
+            End While
+
         End While
 
         FileClose(1)
@@ -125,7 +131,15 @@ Module Module1
             WriteLine(1, MemberId)
             Console.Write("Do you want to add more records? (Y/N):")
             MoreRec = Console.ReadLine
+            
+             While MoreRec <> "Y" And MoreRec <> "N"
+                Console.WriteLine("Please enter Y or N") 
+                MoreRec = Console.ReadLine
+            End While
+            
         End While
+        
+        Fileclose(1)
 
     End Sub
 
