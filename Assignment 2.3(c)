@@ -1,0 +1,28 @@
+Module Module1
+
+    Sub Main()
+        Dim s As String = ""
+        Dim first As Char
+        Dim symb As Char = "*"
+        Dim newStr As String = ""
+
+        Console.Write("Enter string: ")
+        s = Console.ReadLine()
+
+        first = s(0)
+        newStr = first
+
+        For i = 1 To Len(s) - 1
+            If s(i) <> first Then
+                newStr = newStr & s(i)
+            Else : newStr = newStr & symb
+            End If
+        Next
+
+        Console.WriteLine(newStr)
+
+        Console.ReadLine()
+
+    End Sub
+
+End Module
