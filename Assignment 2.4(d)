@@ -1,0 +1,21 @@
+Module Module1
+
+    Sub Main()
+        Dim a As String = ""
+        Dim b As String = ""
+        Dim NewStr As String = ""
+
+        Console.Write("Enter String a:")
+        a = Console.ReadLine
+        Console.Write("Enter String b:")
+        b = Console.ReadLine
+
+        NewStr = Mid(b, 1, 2) & Mid(a, 3) & " " & Mid(a, 1, 2) & Mid(b, 3)
+
+        Console.WriteLine(NewStr)
+
+        Console.ReadLine()
+
+    End Sub
+
+End Module
