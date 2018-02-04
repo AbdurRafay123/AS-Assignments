@@ -1,0 +1,21 @@
+Module Module1
+
+    Sub Main()
+        Dim S As String
+
+        S = ""
+
+        Console.Write("Enter String:")
+        S = Console.ReadLine
+
+        If Len(S) >= 2 Then
+            Console.WriteLine("String:" & Left(S, 2) & Right(S, 2))
+        ElseIf Len(S) < 2 Then
+            Console.WriteLine("""")
+        End If
+
+        Console.ReadLine()
+
+    End Sub
+
+End Module
