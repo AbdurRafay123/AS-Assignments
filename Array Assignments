@@ -1,0 +1,31 @@
+Module Module1
+    Sub Main()
+
+        Dim Alphabets(122) As Integer
+        Dim str As String = " "
+        Dim x As Integer
+        Dim y As Char
+        Dim Code As Integer
+        Dim letter As Char
+
+        FileOpen(1, "d:\Text.txt", OpenMode.Input)
+
+        While Not EOF(1)
+            Input(1, str)
+            str = LCase(str)
+            x = Len(str)
+            For i = 1 To x Step 1
+                y = Mid(str, i, 1)
+                Code = Asc(y)
+                Alphabets(Code) = Alphabets(Code) + 1
+            Next
+        End While
+        For j = 97 To 122 Step 1
+            letter = Chr(j)
+            Console.WriteLine(letter & " = " & Alphabets(j))
+        Next
+
+        Console.ReadKey()
+
+    End Sub
+End Module
